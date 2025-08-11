@@ -1,11 +1,11 @@
 // Replace this with your Firebase project config:
 const firebaseConfig = {
-  apiKey: "AIzaSyD9wRSGDR9mA_elxlgPB55PnE88TRhEdfw",
-  authDomain: "talk2me-6b0ff.firebaseapp.com",
-  databaseURL: "https://talk2me-default-rtdb.firebaseio.com",
-  projectId: "talk2me-6b0ff",
-  storageBucket: "talk2me-6b0ff.appspot.com",
-  messagingSenderId: "593260218377",
+  apiKey: "YOUR FB API",
+  authDomain: "project_name-6b0ff.firebaseapp.com",
+  databaseURL: "https://project_name-default-rtdb.firebaseio.com",
+  projectId: "project_name",
+  storageBucket: "project_name.appspot.com",
+  messagingSenderId: "sender",
   appId: "1:593260218377:web:b880b465563faf135b90d8"
 };
 
