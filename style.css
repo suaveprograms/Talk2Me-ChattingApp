@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #1e1e2f;
+  color: #eee;
+}
+
+.chat-container {
+  background: #2c2f4a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+h1 {
+  margin: 0 0 15px;
+  text-align: center;
+  user-select: none;
+}
+
+.username-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.username-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.username-box button {
+  background: #00bfa6;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.username-box button:hover {
+  background: #019e8a;
+}
+
+#chatUI {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 8px;
+  background: #393c63;
+  user-select: text;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #515576;
+  border-radius: 6px;
+  word-wrap: break-word;
+}
+
+#messageInput {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#sendBtn {
+  background: #00bfa6;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+#sendBtn:hover {
+  background: #019e8a;
+}
+
+@media (max-width: 480px) {
+  .chat-container {
+    height: 90vh;
+    padding: 15px;
+  }
+}
+.timestamp {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-left: 8px;
+  user-select: none;
+}
+.message {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #515576;
+  border-radius: 6px;
+  word-wrap: break-word;
+  color: white; /* Ensure message text is readable */
+}
+#typingIndicator {
+  font-style: italic;
+  color: #aaa;
+  user-select: none;
+  height: 20px;
+}
